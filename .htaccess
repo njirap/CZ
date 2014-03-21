@@ -1,0 +1,14 @@
+# RewriteEngine on
+# 
+# # Base URL
+# RewriteBase  /mysite/
+# 
+# # Options +FollowSymlinks
+# # Controleer of het geen bestaand directory is
+# RewriteCond %{REQUEST_FILENAME} !-d
+# # Controleer of het geen bestaand bestand is
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond $1 !^(index\.php|robots\.txt)
+# RewriteRule ^(.*)$ /index.php/$1 [L] 
+
+ErrorDocument 404 http://localhost/cz/errors/404.php
